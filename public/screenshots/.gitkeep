@@ -1,0 +1,10 @@
+# Screenshots
+
+Add your screenshots here:
+- `home.png` - Screenshot of the home page
+- `apps.png` - Screenshot of the apps listing page
+
+To take screenshots:
+1. Run `npm run dev`
+2. Open browser at http://localhost:3000
+3. Take screenshots and save them here

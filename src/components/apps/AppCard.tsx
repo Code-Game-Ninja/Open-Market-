@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Star, GitFork } from 'lucide-react';
 import { App } from '@/types';
 import { motion } from 'framer-motion';
@@ -49,7 +50,14 @@ export function AppCard({ app }: AppCardProps) {
               <div className="flex items-center gap-4">
                 <div className="h-14 w-14 rounded-xl bg-gradient-to-br from-secondary to-background flex items-center justify-center overflow-hidden border border-border/50 shadow-inner">
                   {app.logo ? (
-                    <img src={app.logo} alt={app.name} className="h-10 w-10 object-contain" />
+                    <Image 
+                      src={app.logo} 
+                      alt={app.name} 
+                      width={40}
+                      height={40}
+                      className="h-10 w-10 object-contain" 
+                      unoptimized
+                    />
                   ) : (
                     <div className="text-2xl font-bold font-heading text-muted-foreground">{app.name.charAt(0)}</div>
                   )}

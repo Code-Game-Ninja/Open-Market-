@@ -28,7 +28,7 @@ export default async function FeaturedPage() {
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20 text-sm font-medium">
               <Award className="h-4 w-4" />
-              Editor's Choice
+              Editor&apos;s Choice
             </div>
             <h1 className="text-4xl md:text-6xl font-bold font-heading tracking-tight">
               Featured Apps

@@ -1,5 +1,6 @@
 import { Users, Heart, Github, Star, GitPullRequest, Award } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Contributors - AppForge',
@@ -84,10 +85,13 @@ export default function ContributorsPage() {
                         {index + 1}
                       </div>
                     )}
-                    <img 
+                    <Image 
                       src={contributor.avatar} 
                       alt={contributor.name}
+                      width={64}
+                      height={64}
                       className="w-16 h-16 rounded-full bg-secondary"
+                      unoptimized
                     />
                   </div>
                   <div className="flex-grow">

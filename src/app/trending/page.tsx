@@ -38,7 +38,7 @@ export default async function TrendingPage() {
               Trending Apps
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              Discover what's popular in the open source community. 
+              Discover what&apos;s popular in the open source community. 
               Updated every 30 minutes.
             </p>
           </div>

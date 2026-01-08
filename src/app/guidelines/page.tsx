@@ -1,5 +1,6 @@
-import { BookOpen, CheckCircle2, XCircle, AlertTriangle, FileCode, Shield, Users } from 'lucide-react';
+import { BookOpen, CheckCircle2, XCircle, AlertTriangle, FileCode, Shield } from 'lucide-react';
 import Link from 'next/link';
+import { LucideIcon } from 'lucide-react';
 
 export const metadata = {
   title: 'Submission Guidelines - AppForge',
@@ -95,7 +96,7 @@ export default function GuidelinesPage() {
           <section className="glass-card rounded-2xl p-8">
             <h2 className="text-2xl font-bold font-heading mb-6 flex items-center gap-3">
               <XCircle className="h-6 w-6 text-red-500" />
-              What We Don't Accept
+              What We Don&apos;t Accept
             </h2>
             <ul className="grid md:grid-cols-2 gap-4">
               {[
@@ -125,11 +126,11 @@ export default function GuidelinesPage() {
             <div className="space-y-6 text-muted-foreground">
               <div>
                 <h3 className="font-semibold text-foreground mb-2">Use Descriptive Topics</h3>
-                <p>Add relevant GitHub topics to your repository (e.g., "desktop", "cli", "productivity"). This helps us categorize your app correctly.</p>
+                <p>Add relevant GitHub topics to your repository (e.g., &quot;desktop&quot;, &quot;cli&quot;, &quot;productivity&quot;). This helps us categorize your app correctly.</p>
               </div>
               <div>
                 <h3 className="font-semibold text-foreground mb-2">Provide Screenshots</h3>
-                <p>Include screenshots or GIFs in your README to showcase your application's interface.</p>
+                <p>Include screenshots or GIFs in your README to showcase your application&apos;s interface.</p>
               </div>
               <div>
                 <h3 className="font-semibold text-foreground mb-2">Semantic Versioning</h3>
@@ -162,7 +163,7 @@ function Requirement({
   description, 
   status 
 }: { 
-  icon: any; 
+  icon: LucideIcon; 
   title: string; 
   description: string; 
   status: 'required' | 'recommended';

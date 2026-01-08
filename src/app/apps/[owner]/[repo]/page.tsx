@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, Star, GitFork, ExternalLink, Download, AlertCircle, CheckCircle2, FileArchive, Smartphone } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { getRepository, getReadme, getReleases } from '@/lib/github';
@@ -19,12 +20,12 @@ export async function generateMetadata({ params }: PageProps) {
   
   if (!repo) {
     return {
-      title: 'App Not Found - AppForge',
+      title: 'App Not Found - OpenStore',
     };
   }
 
   return {
-    title: `${repo.name} - AppForge`,
+    title: `${repo.name} - OpenStore`,
     description: repo.description,
   };
 }
@@ -98,7 +99,14 @@ export default async function AppPage({ params }: PageProps) {
           <div className="flex flex-col lg:flex-row items-start gap-8">
             <div className="h-32 w-32 md:h-40 md:w-40 rounded-2xl bg-white dark:bg-slate-900 shadow-xl flex items-center justify-center border border-white/20 p-6 flex-shrink-0 backdrop-blur-sm">
                {app.logo ? (
-                  <img src={app.logo} alt={app.name} className="h-full w-full object-contain drop-shadow-md" />
+                  <Image 
+                    src={app.logo} 
+                    alt={app.name} 
+                    width={160}
+                    height={160}
+                    className="h-full w-full object-contain drop-shadow-md" 
+                    unoptimized
+                  />
                 ) : (
                   <div className="text-5xl font-bold font-heading text-primary/40">{app.name.charAt(0)}</div>
                 )}

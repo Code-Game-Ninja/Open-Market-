@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Heart, Twitter, Github, Linkedin, Mail, ArrowUpRight, Sparkles, Zap } from 'lucide-react';
+import { Heart, Twitter, Github, Linkedin, Mail, ArrowUpRight, Sparkles, Zap, LucideIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 // Custom AppForge Logo Component
@@ -201,7 +201,7 @@ export function Footer() {
   );
 }
 
-function SocialLink({ icon: Icon, href, label }: { icon: any, href: string, label: string }) {
+function SocialLink({ icon: Icon, href, label }: { icon: LucideIcon, href: string, label: string }) {
   return (
     <Link 
       href={href} 

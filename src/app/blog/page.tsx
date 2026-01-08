@@ -1,5 +1,6 @@
-import { Calendar, ArrowRight, Tag, Clock, User } from 'lucide-react';
+import { Calendar, ArrowRight, Clock, User } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Blog - AppForge',
@@ -80,10 +81,13 @@ export default function BlogPage() {
             <div className="glass-card rounded-3xl overflow-hidden hover:border-primary/50 transition-all duration-300">
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="aspect-video md:aspect-auto relative overflow-hidden">
-                  <img 
+                  <Image 
                     src={blogPosts[0].image} 
                     alt={blogPosts[0].title}
+                    width={800}
+                    height={450}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    unoptimized
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent md:hidden" />
                 </div>
@@ -130,10 +134,13 @@ export default function BlogPage() {
             <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
               <article className="glass-card rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 h-full flex flex-col">
                 <div className="aspect-video relative overflow-hidden">
-                  <img 
+                  <Image 
                     src={post.image} 
                     alt={post.title}
+                    width={600}
+                    height={340}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    unoptimized
                   />
                 </div>
                 <div className="p-6 flex-grow flex flex-col">

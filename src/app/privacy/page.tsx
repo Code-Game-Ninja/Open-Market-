@@ -50,7 +50,7 @@ export default function PrivacyPage() {
               <ul className="text-muted-foreground space-y-2">
                 <li><strong>Usage Data:</strong> We collect anonymous usage statistics to improve our service, including pages visited and search queries.</li>
                 <li><strong>Device Information:</strong> Basic device information like browser type and operating system for compatibility purposes.</li>
-                <li><strong>GitHub Data:</strong> When you submit an app, we fetch public repository information from GitHub's API.</li>
+                <li><strong>GitHub Data:</strong> When you submit an app, we fetch public repository information from GitHub&apos;s API.</li>
               </ul>
             </div>
 
@@ -74,8 +74,8 @@ export default function PrivacyPage() {
               </h2>
               <p className="text-muted-foreground">
                 You have the right to access, correct, or delete your personal data. 
-                Since we collect minimal data and don't require accounts, most users 
-                don't have personal data stored with us.
+                Since we collect minimal data and don&apos;t require accounts, most users 
+                don&apos;t have personal data stored with us.
               </p>
             </div>
 
@@ -85,8 +85,8 @@ export default function PrivacyPage() {
                 Third-Party Services
               </h2>
               <p className="text-muted-foreground">
-                We use GitHub's API to fetch repository information. Please refer to 
-                GitHub's privacy policy for information about how they handle data. 
+                We use GitHub&apos;s API to fetch repository information. Please refer to 
+                GitHub&apos;s privacy policy for information about how they handle data. 
                 We do not sell or share your data with any other third parties.
               </p>
             </div>

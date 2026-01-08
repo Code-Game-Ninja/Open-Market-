@@ -1,7 +1,7 @@
-import { getRepository, searchRepositories } from './github';
+import { getRepository, searchRepositories, GitHubRepo } from './github';
 import { mapRepoToApp } from './adapters';
 import { getAppConfigs } from './data';
-import { App, Category } from '@/types';
+import { App } from '@/types';
 
 export const revalidate = 3600;
 
@@ -85,7 +85,7 @@ export async function getAppsByCategory(category: string, limit: number = 100): 
     const perPage = Math.min(limit, 100);
     const pages = Math.ceil(limit / 100);
     
-    let allItems: any[] = [];
+    let allItems: GitHubRepo[] = [];
     
     for (let page = 1; page <= pages && allItems.length < limit; page++) {
       const searchResults = await searchRepositories(searchQuery, { 

@@ -91,7 +91,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-bold mb-4">5. Limitation of Liability</h2>
               <p className="text-muted-foreground">
-                AppForge is provided "as is" without warranties of any kind. We are not liable 
+                AppForge is provided &quot;as is&quot; without warranties of any kind. We are not liable 
                 for any damages arising from the use of our service or any software downloaded 
                 through our platform.
               </p>

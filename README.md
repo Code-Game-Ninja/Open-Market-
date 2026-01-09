@@ -47,13 +47,17 @@
 ## 🖼️ Screenshots
 
 <p align="center">
-  <img src="public/screenshots/home.png" alt="Home Page" width="45%">
-  <img src="public/screenshots/apps.png" alt="Apps Page" width="45%">
+<img width="1919" height="958" alt="image" src="https://github.com/user-attachments/assets/87dc097f-42fa-484b-b942-783d389934b4" />
+
+<img width="1872" height="961" alt="image" src="https://github.com/user-attachments/assets/d4f1276d-f509-41ab-a01f-57f2f5fc87c1" />
+
+<img width="1787" height="949" alt="image" src="https://github.com/user-attachments/assets/9d02db95-da90-4b8e-83ae-6eeb2ae866ee" />
+  
 </p>
 
 ## 🚀 Demo
 
-**Live Demo:** [Coming Soon]
+[**Live Demo**](open-market-three.vercel.app) 
 
 ## 🛠️ Tech Stack
 
